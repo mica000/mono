@@ -85,7 +85,7 @@ export function StacksCommonSendForm({
                   <Flex
                     width="100%"
                     flexDirection="column"
-                    marginBottom={{ base: 'unset', sm: '33px' }}
+                    marginBottom={['unset', '33px']}
                   >
                     {amountField}
                     {selectedAssetField}

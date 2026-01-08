@@ -40,7 +40,7 @@ export function NetworkForm({ isEditNetworkMode, title }: NetworkFormProps) {
             <Stack
               gap="space.05"
               maxWidth="pageWidth"
-              px={{ base: 'space.00', sm: 'space.04', md: 'space.05' }}
+              px={['space.00', 'space.04', 'space.05']}
               my="space.05"
             >
               <styled.span textStyle="body.02">

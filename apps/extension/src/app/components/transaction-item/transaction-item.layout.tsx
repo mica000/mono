@@ -46,7 +46,7 @@ export function TransactionItemLayout({
             <Caption
               overflow="hidden"
               textOverflow="ellipsis"
-              maxWidth={{ base: '160px', md: 'unset' }}
+              maxWidth={['160px', null, 'unset']}
             >
               {txCaption}
             </Caption>

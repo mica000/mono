@@ -63,7 +63,7 @@ export function AccountCard({
         </Box>
         <NetworkSwitcherBadge />
       </Flex>
-      <Flex flexDir={{ base: 'column', md: 'row' }} justify="space-between">
+      <Flex flexDir={['column', null, 'row']} justify="space-between">
         <Box width="100%" pt="space.02">
           <SkeletonLoader width="200px" height="46px" isLoading={isLoadingBalance}>
             <Flex direction="column">

@@ -50,7 +50,7 @@ export function SubmittedTransactionItem({ transaction, txid }: SubmittedTransac
             <Caption
               overflow="hidden"
               textOverflow="ellipsis"
-              maxWidth={{ base: '160px', md: 'unset' }}
+              maxWidth={['160px', null, 'unset']}
             >
               {caption}
             </Caption>
