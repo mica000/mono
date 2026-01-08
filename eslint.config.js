@@ -54,9 +54,39 @@ const useQueryConfigOrKeyRule = {
   },
 };
 
+const preferStylePropsRule = {
+  meta: {
+    type: 'suggestion',
+    docs: {
+      description:
+        'Prefer Panda CSS style props over inline style={{}} object notation for better consistency and token usage.',
+    },
+    schema: [],
+  },
+  create(context) {
+    return {
+      JSXAttribute(node) {
+        if (
+          node.name.type === 'JSXIdentifier' &&
+          node.name.name === 'style' &&
+          node.value?.type === 'JSXExpressionContainer' &&
+          node.value.expression.type === 'ObjectExpression'
+        ) {
+          context.report({
+            node,
+            message:
+              'Prefer Panda CSS style props over style={{}}. Use props like bg="red" instead of style={{ backgroundColor: "red" }}.',
+          });
+        }
+      },
+    };
+  },
+};
+
 const leatherCustomPlugin = {
   rules: {
     'use-query-config-or-key': useQueryConfigOrKeyRule,
+    'prefer-style-props': preferStylePropsRule,
   },
 };
 
@@ -118,6 +148,12 @@ export default defineConfig([
     name: 'ui',
     files: ['packages/ui/src/**/*.{ts,tsx}'],
     extends: [reactConfig],
+    plugins: {
+      leather: leatherCustomPlugin,
+    },
+    rules: {
+      'leather/prefer-style-props': 'warn',
+    },
   },
   {
     name: 'isolated declarations packages',
@@ -185,18 +221,32 @@ export default defineConfig([
     extends: [reactConfig, pluginQuery.configs['flat/recommended']],
     rules: {
       '@typescript-eslint/only-throw-error': 'off',
+      'leather/prefer-style-props': 'warn',
+    },
+    plugins: {
+      leather: leatherCustomPlugin,
     },
   },
   {
     name: 'extension',
     files: ['apps/extension/src/**/*.{ts,tsx}', 'apps/extension/.storybook/**/*.{ts,tsx}'],
     extends: [reactConfig, pluginQuery.configs['flat/recommended']],
+    plugins: {
+      leather: leatherCustomPlugin,
+    },
+    rules: {
+      'leather/prefer-style-props': 'warn',
+    },
   },
   {
     name: 'mobile',
     files: ['apps/mobile/src/**/*.{ts,tsx}'],
     extends: [reactConfig, pluginLingui.configs['flat/recommended']],
+    plugins: {
+      leather: leatherCustomPlugin,
+    },
     rules: {
+      'leather/prefer-style-props': 'warn',
       'lingui/no-unlocalized-strings': [
         'error',
         // https://github.com/lingui/eslint-plugin/blob/main/docs/rules/no-unlocalized-strings.md
