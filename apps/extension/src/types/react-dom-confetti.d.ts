@@ -11,4 +11,3 @@ export interface ConfettiProps {
 
 declare const Confetti: ComponentType<ConfettiProps>;
 export default Confetti;
-

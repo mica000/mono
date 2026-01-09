@@ -1,4 +1,4 @@
-import type { ComponentType, CSSProperties } from 'react';
+import type { CSSProperties, ComponentType } from 'react';
 
 export interface QrCodeProps {
   value: string;
@@ -13,4 +13,3 @@ export interface QrCodeProps {
 
 declare const QRCode: ComponentType<QrCodeProps>;
 export default QRCode;
-
