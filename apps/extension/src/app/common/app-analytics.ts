@@ -18,7 +18,7 @@ import { useAccountTotalBalance } from '@app/query/common/account-balance/accoun
 import { useStxAccountBalance } from '@app/query/stacks/balance/stx-balance.hooks';
 import { store } from '@app/store';
 import { selectWalletType } from '@app/store/common/wallet-type.selectors';
-import { useWalletFingerprint } from '@app/store/in-memory-key/in-memory-key.hooks';
+import { useWalletFingerprint } from '../store/in-memory-key/in-memory-key.hooks';
 import { selectCurrentNetwork } from '@app/store/networks/networks.selectors';
 
 import { useOnMount } from './hooks/use-on-mount';

@@ -5,7 +5,7 @@ import { AppThunk } from '@app/store';
 import {
   selectDefaultWalletKey,
   selectRootKeychain,
-} from '../in-memory-key/in-memory-key.selectors';
+} from '@app/store/in-memory-key/in-memory-key.selectors';
 import { selectHighestAccountIndex } from './stx-chain.selectors';
 import { stxChainSlice } from './stx-chain.slice';
 

@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router';
 
 import { OnboardingSelectors } from '@tests/selectors/onboarding.selectors';
-import { Form, Formik } from 'formik';
+import { Form, Formik, type FormikProps } from 'formik';
 import { debounce } from 'ts-debounce';
 import * as yup from 'yup';
 
@@ -113,7 +113,7 @@ function SetPasswordPage() {
     <>
       <OnboardingHeader />
       <Content>
-        <Formik
+        <Formik<SetPasswordFormValues>
           initialValues={setPasswordFormValues}
           onSubmit={onSubmit}
           validationSchema={validationSchema}
@@ -121,7 +121,7 @@ function SetPasswordPage() {
           validateOnMount
           validateOnChange
         >
-          {({ dirty, isSubmitting, isValid }) => (
+          {({ dirty, isSubmitting, isValid }: FormikProps<SetPasswordFormValues>) => (
             <Form>
               <TwoColumnLayout
                 wideChild={false}

@@ -26,7 +26,7 @@ import { persistConfig } from '@shared/storage/redux-persist';
 
 import { appPermissionsSlice } from './app-permissions/app-permissions.slice';
 import { stxChainSlice } from './chains/stx-chain.slice';
-import { inMemoryKeySlice } from './in-memory-key/in-memory-key.slice';
+import { inMemoryKeySlice } from '@app/store/in-memory-key/in-memory-key.slice';
 import { bitcoinKeysSlice } from './ledger/bitcoin/bitcoin-key.slice';
 import { stacksKeysSlice } from './ledger/stacks/stacks-key.slice';
 import { manageTokensSlice } from './manage-tokens/manage-tokens.slice';
