@@ -80,12 +80,10 @@ export function AccountCard({
                   })
                 )}
                 data-testid={SharedComponentsSelectors.AccountCardBalanceText}
-                style={{
-                  whiteSpace: 'nowrap',
-                  display: 'inline-block',
-                  transformOrigin: 'left center',
-                  maxWidth: '100%',
-                }}
+                whiteSpace="nowrap"
+                display="inline-block"
+                transformOrigin="left center"
+                maxWidth="100%"
                 ref={scaleTextRef}
               >
                 <PrivateTextLayout
@@ -124,12 +122,10 @@ export function AccountCard({
                     data-state={isLoadingAdditionalData ? 'loading' : undefined}
                     className={shimmerStyles}
                     data-testid={SharedComponentsSelectors.AccountCardBalanceText}
-                    style={{
-                      whiteSpace: 'nowrap',
-                      display: 'inline-block',
-                      transformOrigin: 'left center',
-                      maxWidth: '100%',
-                    }}
+                    whiteSpace="nowrap"
+                    display="inline-block"
+                    transformOrigin="left center"
+                    maxWidth="100%"
                     pt="space.02"
                     ref={scaleTextRef}
                   >
