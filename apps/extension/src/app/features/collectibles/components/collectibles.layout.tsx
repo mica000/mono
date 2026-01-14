@@ -30,7 +30,6 @@ export function CollectiblesLayout({
 }: CollectiblesLayoutProps) {
   return (
     <Stack gap="space.04">
-      {/* List summary */}
       <Flex
         alignItems="center"
         justifyContent="space-between"
@@ -87,7 +86,6 @@ export function CollectiblesLayout({
         </Box>
       )}
 
-      {/* Tile grid (full-bleed on small widths) */}
       {!isLoading && !isError && hasCollectibles ? (
         <Box width={{ base: 'calc(100% + 48px)', md: '100%' }} marginX={{ base: '-24px', md: 0 }}>
           <styled.div
@@ -100,7 +98,6 @@ export function CollectiblesLayout({
         </Box>
       ) : null}
 
-      {/* Widgets */}
       {!isLoading && !isError ? (
         <Stack gap="space.04" px={{ base: 0, md: 'space.05' }}>
           <CollectiblesMarketplaces />
