@@ -489,6 +489,21 @@
   * devDependencies
     * @leather.io/models bumped to 0.41.0
 
+## [1.103.1](https://github.com/leather-io/mono/compare/@leather.io/ui-v1.103.0...@leather.io/ui-v1.103.1) (2026-01-14)
+
+
+### Bug Fixes
+
+* **extension:** bleeding shadows ([f14bd12](https://github.com/leather-io/mono/commit/f14bd123173f9377eb942de7ec3f03087c51e142))
+* **mobile:** refactor avatars + fix regressions to mobile activity ([08465b6](https://github.com/leather-io/mono/commit/08465b6a972002cc957cbcd9f00b7fd8fdee8cf9))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @leather.io/features bumped to 1.1.10
+
 ## [1.103.0](https://github.com/leather-io/mono/compare/@leather.io/ui-v1.102.0...@leather.io/ui-v1.103.0) (2026-01-12)
 
 

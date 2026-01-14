@@ -19,6 +19,22 @@
     * @leather.io/ui bumped to 1.80.0
     * @leather.io/utils bumped to 0.43.0
 
+## [2.96.6](https://github.com/leather-io/mono/compare/@leather.io/mobile-v2.96.5...@leather.io/mobile-v2.96.6) (2026-01-14)
+
+
+### Bug Fixes
+
+* **mobile:** refactor avatars + fix regressions to mobile activity ([08465b6](https://github.com/leather-io/mono/commit/08465b6a972002cc957cbcd9f00b7fd8fdee8cf9))
+* **mobile:** wallet state not rehydrating after dev reload ([145d4c3](https://github.com/leather-io/mono/commit/145d4c3a45488520161c4f58eb06296e1ab31071))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @leather.io/features bumped to 1.1.10
+    * @leather.io/ui bumped to 1.103.1
+
 ## [2.96.5](https://github.com/leather-io/mono/compare/@leather.io/mobile-v2.96.4...@leather.io/mobile-v2.96.5) (2026-01-12)
 
 

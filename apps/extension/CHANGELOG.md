@@ -21,6 +21,25 @@
   * dependencies
     * @leather.io/ui bumped to 1.88.0
 
+## [6.91.1](https://github.com/leather-io/mono/compare/@leather.io/extension-v6.91.0...@leather.io/extension-v6.91.1) (2026-01-14)
+
+
+### Bug Fixes
+
+* **extension:** bleeding shadows ([f14bd12](https://github.com/leather-io/mono/commit/f14bd123173f9377eb942de7ec3f03087c51e142))
+* **extension:** inaccurate total spend ([e5dbd9f](https://github.com/leather-io/mono/commit/e5dbd9fe2138938825d282012eaa4626fbbd881f))
+* **extension:** make sure error boundary is centered, ref LEA-2563 ([9506bba](https://github.com/leather-io/mono/commit/9506bbafcce9a34023f2c0db9c820f5dab409217))
+* make buttons sticky in popup mode ([1786eac](https://github.com/leather-io/mono/commit/1786eac7eaf69442ffe9d1903b9663f498a95f71))
+* **mobile:** refactor avatars + fix regressions to mobile activity ([08465b6](https://github.com/leather-io/mono/commit/08465b6a972002cc957cbcd9f00b7fd8fdee8cf9))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @leather.io/features bumped to 1.1.10
+    * @leather.io/ui bumped to 1.103.1
+
 ## [6.91.0](https://github.com/leather-io/mono/compare/@leather.io/extension-v6.90.0...@leather.io/extension-v6.91.0) (2026-01-12)
 
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.10](https://github.com/leather-io/mono/compare/@leather.io/features-v1.1.9...@leather.io/features-v1.1.10) (2026-01-14)
+
+
+### Bug Fixes
+
+* **mobile:** refactor avatars + fix regressions to mobile activity ([08465b6](https://github.com/leather-io/mono/commit/08465b6a972002cc957cbcd9f00b7fd8fdee8cf9))
+
 ## [1.1.9](https://github.com/leather-io/mono/compare/@leather.io/features-v1.1.8...@leather.io/features-v1.1.9) (2026-01-12)
 
 
