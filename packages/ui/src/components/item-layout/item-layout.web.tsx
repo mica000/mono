@@ -45,7 +45,7 @@ export function ItemLayout({
           ) : (
             <styled.span
               textStyle="label.02"
-              maxWidth={{ base: '175px', md: 'unset' }}
+              maxWidth={['175px', 'unset']}
               overflow="hidden"
               textOverflow="ellipsis"
             >

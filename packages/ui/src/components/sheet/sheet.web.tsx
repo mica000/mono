@@ -109,12 +109,10 @@ export function Sheet({
 
             {wrapChildren ? (
               <Box
-                style={{
-                  height: '100%',
-                  maxHeight: contentMaxHeight,
-                  marginBottom: footer ? token('sizes.footerHeight') : token('spacing.space.04'),
-                  overflowY: 'auto',
-                }}
+                height="100%"
+                maxHeight={contentMaxHeight}
+                marginBottom={footer ? token('sizes.footerHeight') : token('spacing.space.04')}
+                overflowY="auto"
               >
                 {children}
               </Box>

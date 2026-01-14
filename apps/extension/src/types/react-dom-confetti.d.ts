@@ -1,10 +1,10 @@
 import type { ComponentType } from 'react';
 
-export interface ConfettiConfig {
+interface ConfettiConfig {
   [key: string]: unknown;
 }
 
-export interface ConfettiProps {
+interface ConfettiProps {
   active: boolean;
   config?: ConfettiConfig;
 }

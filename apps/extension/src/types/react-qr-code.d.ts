@@ -1,6 +1,6 @@
 import type { CSSProperties, ComponentType } from 'react';
 
-export interface QrCodeProps {
+interface QrCodeProps {
   value: string;
   size?: number;
   bgColor?: string;
